@@ -1,29 +1,32 @@
 # StockFlow Backend Case Study
 
 ## Overview
-This project is part of a backend engineering case study for an Inventory Management System designed for B2B SaaS platforms.
+This project is part of a Backend Engineering Intern case study for an Inventory Management System.
 
 ## Features Implemented
 - Product creation with validation
-- Inventory management system
-- Low stock alert API for companies
+- Inventory management
+- Low stock alert API
 
 ## API Endpoint
 GET /api/companies/{company_id}/alerts/low-stock
 
 ## Approach
-- Designed a scalable relational database schema
-- Ensured data consistency using transactions
-- Considered real-world constraints like multiple warehouses and suppliers
+- Designed scalable database structure
+- Used transaction handling for consistency
+- Considered multiple warehouses and suppliers
 
 ## Assumptions
-- Recent sales activity is considered within the last 30 days
-- Default low stock threshold is 10
-- One primary supplier per product
+- Recent sales = last 30 days
+- Default threshold = 10
+- One supplier per product
 
 ## How to Run
 1. Install dependencies:
    pip install -r requirements.txt
 
-2. Run application:
+2. Run:
    python app.py
+
+## Note
+This is a simplified implementation focusing on backend logic and structure.
